@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prank Tools - 3D Print Wonders</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --apple-gray: #86868b;
+            --apple-light-gray: #f5f5f7;
+            --apple-blue: #0071e3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -.022em;
+            background-color: #fff;
+            color: #1d1d1f;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 22px;
+        }
+        
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: saturate(180%) blur(20px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+            padding: 0 22px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--apple-blue);
+        }
+        
+        .logo {
+            font-size: 21px;
+            font-weight: 500;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 120px 0 60px;
+            background-color: var(--apple-light-gray);
+            color: #1d1d1f;
+        }
+        
+        h1 {
+            font-size: 56px;
+            line-height: 1.07143;
+            font-weight: 600;
+            letter-spacing: -.005em;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 48px;
+            line-height: 1.08349;
+            font-weight: 600;
+            letter-spacing: -.003em;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            font-size: 21px;
+            line-height: 1.381;
+            font-weight: 400;
+            letter-spacing: .011em;
+            margin-bottom: 20px;
+        }
+        
+        .section {
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .product-card {
+            background-color: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-title {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .product-price {
+            font-size: 18px;
+            color: var(--apple-gray);
+            margin-bottom: 15px;
+        }
+        
+        .cta {
+            display: inline-block;
+            background-color: var(--apple-blue);
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 980px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .cta:hover {
+            background-color: #0077ed;
+        }
+        
+        footer {
+            background-color: var(--apple-light-gray);
+            color: var(--apple-gray);
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">3D Print Wonders</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#featured">Featured</a></li>
+                <li><a href="index.html#categories">Categories</a></li>
+                <li><a href="index.html#custom">Custom Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Prank Tools</h1>
+                <p>Discover our collection of hilarious 3D printed prank tools for endless fun!</p>
+            </div>
+        </section>
+
+        <section id="prank-tools" class="section">
+            <div class="container">
+                <h2>Our Prank Tool Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Fake Spill Cup" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Fake Spill Cup</h3>
+                            <p class="product-price">$9.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Squirting Flower" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Squirting Flower</h3>
+                            <p class="product-price">$7.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Fake Power Outlet" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Fake Power Outlet</h3>
+                            <p class="product-price">$6.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Whoopee Cushion" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Whoopee Cushion</h3>
+                            <p class="product-price">$5.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Fake Parking Ticket" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Fake Parking Ticket</h3>
+                            <p class="product-price">$4.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Disappearing Ink Pen" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Disappearing Ink Pen</h3>
+                            <p class="product-price">$8.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Fake Wi-Fi Antenna" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Fake Wi-Fi Antenna</h3>
+                            <p class="product-price">$11.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Exploding Golf Ball" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Exploding Golf Ball</h3>
+                            <p class="product-price">$12.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="/api/placeholder/300/200" alt="Fake Security Camera" class="product-image">
+                        <div class="product-info">
+                            <h3 class="product-title">Fake Security Camera</h3>
+                            <p class="product-price">$14.99</p>
+                            <a href="#" class="cta">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="custom" class="section" style="background-color: var(--apple-light-gray);">
+            <div class="container">
+                <h2>Custom Prank Tools</h2>
+                <p>Have a unique prank idea? We can create custom prank tools tailored to your specifications!</p>
+                <a href="https://exinatiny.github.io/voltr-custom2/" class="cta">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 3D Print Wonders. All rights reserved.</p>
+    </footer>
+</body>
+</html>
